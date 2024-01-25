@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Parisienne&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Open Sans', 'Poppins';
+    scroll-behavior: smooth;
 }
 
 .hero {
@@ -12,16 +14,17 @@
     background-size: cover;
     width: 100%;
     height: 100vh;
+    background-position: 50%;
 }
 
 .hero:before {
 	content:'';
 	position: absolute;
-        top: 0;
+    top: 0;
 	bottom: 0;
 	left: 0;
 	right: 0;
-	background-color: rgba(0,0,0,0.6);
+	background-color: rgba(0,0,0,0.7);
 }
 
 .hero-content {
@@ -32,4 +35,179 @@
     height: 100vh;
     position: relative;
     color: #fff;
+}
+
+.hero-content .date {
+    display: inline-block;
+    position: relative;
+    font-weight: 200;
+    font-size: 2rem;
+}
+
+.hero-content .date::after, .date::before {
+    content: '';
+    position: absolute;
+    width: 120px;
+    height: 1px;
+    background-color: white;
+    top: 0.6em;
+}
+
+.hero-content .date::before {
+    left: -140px;
+}
+
+.hero-content .date::after {
+    right: -140px;
+}
+
+
+.hero-content .name {
+    font-weight: 600;
+    font-size: 6rem;
+    font-family: 'Poppins';
+}
+
+.hero-content .age {
+    font-weight: 400;
+    font-size: 3rem;
+    font-family: 'Parisienne';
+}
+
+.line {
+    margin-top: 40px;
+    width: 70%;
+    height: 1px;
+    background-color: #fff;
+}
+
+.line-gray {
+    width: 50%;
+    height: 1px;
+    background-color: rgb(208, 208, 208);
+}
+
+.hero p {
+    font-size: 1.3rem;
+    text-align: center;
+    padding: 35px;
+}
+
+.comilla {
+    margin-top: 50px;
+    width: 50px;
+}
+
+.comilla2 {
+    margin-top: 0px;
+    width: 50px;
+}
+
+.gif {
+    margin-top: 50px;
+    width: 40px;
+}
+
+#cuenta {
+    display: flex;
+    justify-content: center;
+}
+
+.simply-section {
+    padding: 0 5px;
+    margin: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.simply-amount {
+    color: #89713E;
+    display: block;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.simply-word {
+    color: #B97600;
+    text-transform: uppercase;
+    font-weight: 400;
+} 
+
+.countdown {
+    background-color: #f3f3f3;
+    padding: 100px 0px;
+}
+
+h2 {
+    font-size: 2.5rem;
+    color: #B97600;
+    /* padding-bottom: 15px; */
+    text-align: center;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin: 100px 0;
+}
+
+.info .date .title {
+    margin-top: 50px;
+    font-size: 2.5rem;
+    font-weight: 600;
+    font-family: 'Poppins';
+    color: rgb(50, 50, 50);
+}
+
+.info .date span {
+    font-size: 1.3rem;
+    font-weight: 300;
+    font-family: 'Poppins';
+    color: rgb(60, 60, 60);
+}
+
+.info .date a {
+    display: block;
+    padding: 15px 30px;
+    background: rgb(30, 30, 30);
+    border-radius: 100px;
+    margin-top: 20px;
+    text-decoration: none;
+    color: aliceblue;
+    font-family: 'Poppins';
+    font-size: 1.2rem;
+    font-weight: 300;
+    transition: all ease .3s;
+}
+
+.info .date a:hover {
+    background: rgb(60, 60, 60);
+    transition: all ease .3s;
+}
+
+.journey {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px;
+    background: rgb(40, 40, 40);
+    color: aliceblue;
+}
+
+.journey h4 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 500;
+    font-family: 'Poppins';
+    color: #B97600;
+}
+
+.journey span {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-top: 10px;
 }
