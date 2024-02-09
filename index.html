@@ -9,15 +9,18 @@
     <title>Tarjeta de Invitacion</title>
 </head>
 <body>
+  <div class="cover">
+    
+  </div>
     <section class="hero">
         <div class="hero-content">
             <span class="date">31.03.2024</span>
             <span class="name">Anusch</span>
             <span class="age">Mis 15 años</span>
             <div class="line"></div>
-            <img class="comilla" src="/assets/img/comilla.svg" alt="comilla apertura">
+            <img class="comilla" src="/assets/img/comilla.png" alt="comilla apertura">
             <p>Te espero para compartir la alegría de esa noche que será para mi mágica, inolvidable y única.</p>
-            <img class="comilla2" src="/assets/img/comilla2.svg" alt="comilla cierre">  
+            <img class="comilla2" src="/assets/img/comillacierre.png" alt="comilla cierre">  
             <a href="#countdown"><img class="gif" src="/assets/img/scroll.gif" alt=""> </a>
         </div>
     </section>
@@ -36,7 +39,7 @@
         <div class="date">
             <h4 class="title">Día</h4>
             <span>Domingo 31 de Marzo - 20hs</span>
-            <a href="#">Agendar</a>
+            <a title="Add to Calendar" data-id="lZ20188869" href="https://www.addevent.com/event/lZ20188869+google" target="_blank">Agendar</a> 
         </div>
 
         <div class="date">
@@ -47,8 +50,27 @@
 
         <div class="date">
             <h4 class="title">Dirección</h4>
-            <span>Domingo 31 de Marzo - 20hs</span>
-            <a href="https://maps.app.goo.gl/tzFfxc2xjve8AEtY7" target="_blank">¿Cómo llegar?</a>
+            <span>Av. Almte. Brown 3433, Temperley, Provincia de Buenos Aires</span>
+
+            <a type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop" >¿Cómo llegar?</a>
+
+            <!-- Modal -->
+            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"    tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Cómo llegar a la fiesta</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body" id="url">
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8623.125001263137!2d-58.402892026290445!3d-34.78067877947554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcd2de55a4fb4d%3A0x55658674ab3e0277!2sUP%20Fest%20-%20Eventos!5e0!3m2!1ses-419!2sar!4v1707502001350!5m2!1ses-419!2sar" width="300" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="modal-footer">
+                    <a href="https://maps.app.goo.gl/mQqCtYast9D8G8Bg9" target="_blank" type="button" class="btn-ampliar">Ver en Google Maps</a>
+                    </div>
+                </div>
+              </div>
+            </div>
         </div>
     </section>
 
@@ -101,21 +123,19 @@
         <a href="" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop" >Número de CBU</a>
 
         <!-- Modal -->
-        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"    tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
-                <h1 class="modal-title fs-5" id="staticBackdropLabel">🎁🥳💸</h1>
+                <h1 class="modal-title fs-5" id="staticBackdropLabel">Anusch Isabella Cordoba Escada🎁🥳💸</h1>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="modal-body" id="url">
-                2983749123980129
-                </div>
+                <div class="modal-body" id="url">0140082303502956113854</div>
                 <div class="modal-footer">
                 <button type="button" class="btn btn-primary" id="botonCopiar" onclick="copiarUrl()">Copiar CBU</button>
                 </div>
             </div>
-            </div>
+          </div>
         </div>
     </section>
 
@@ -124,5 +144,6 @@
     <script src="js/app.js"></script>
     <script src="js/copy.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.addevent.com/libs/atc/1.6.1/atc.min.js" async defer></script>
 </body>
 </html>
