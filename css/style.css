@@ -471,6 +471,14 @@ h2 {
     margin: 0;
 }
 
+footer a {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #5690a9;
+    font-family: 'Poppins';
+    text-decoration: none;
+}
+
   /* Styles for mobile and tablets */
   @media only screen and (max-width: 1023px) {
 
